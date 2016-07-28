@@ -30,7 +30,7 @@ namespace ProcessPingUsingThreadPool
         private static void threadFunc(object event_no)
         {
             Process p = new Process();
-            int local_count = count++;//The count must be incremented so that there is no repeated threadID error
+            int local_count = count++;
             p.StartInfo.FileName = "ping";
             p.StartInfo.Arguments = "192.168.1." + local_count.ToString();
             p.StartInfo.RedirectStandardOutput = true;
