@@ -9,7 +9,7 @@ namespace ProcessPingUsingThreadPool
     class Program
     {
         private static int count;
-        private static ManualResetEvent[] done_event = new ManualResetEvent[5];
+        private static ManualResetEvent[] done_event = new ManualResetEvent[5];//Manual reset events will allow us to do changes manually...
         static void Main(string[] args)
         {
             int set_count = 0;
